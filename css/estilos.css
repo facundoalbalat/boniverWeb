@@ -1,0 +1,573 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('../imagenes/fondo.gif');
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+header nav ul li a, img {
+	width: 150px;
+}
+
+header nav {
+	background-color: #ff7400;
+	width: 80%;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+}
+
+header nav ul.menu li {
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+
+header nav ul.menu li a {
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	text-decoration: none;
+	color: black;
+}
+
+header nav ul.menu li a:hover {
+	color: rgb(90, 90, 90);
+}
+
+header nav ul.menu li:hover .submenu {
+	display: block;
+	background: #ff7400;
+}
+
+
+header nav ul.menu li .submenu {
+	position: absolute;
+	display: none;
+	width: 230px;
+}
+
+header nav ul.menu li .submenu a {
+	font-size: 18px;
+	display: block;
+	width: 220px;
+	padding-top: 3%;
+}
+
+.relleno {
+	background-color: rgb(255, 255, 255);
+	width: 80%;
+	padding: 2% 2%;
+	margin: auto;
+} 
+
+a {
+	text-decoration: none;
+}
+
+
+/* NEWS */
+section.relleno article img, iframe {
+	display: block;
+	width: 84%;
+	margin: auto;
+	padding: 2%;
+}
+
+section.relleno article p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	line-height: 150%;
+	width: 80%;
+	margin: auto;
+	padding-bottom: 2%;
+}
+
+.news {
+	padding-bottom: 5%;
+}
+
+/* SHOWS */	
+section .alinear {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 4% 2%;
+	color: #ff7400;
+}
+
+section .alinear .noPad {
+	font-size: 20px;
+	padding: 0;
+	color: black;
+}
+
+section .alinear .botonComprar {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 15px;
+	padding: 10px 15px;
+	margin: 5px;
+	background: #ff7400;
+	color: white;
+}
+
+section .alinear .botonComprar:hover {
+	background: #703300;
+}
+
+.shows {
+	padding-bottom: 5%;
+}
+
+
+h1 {
+	background-color: rgb(255, 255, 255);
+	width: 80%;
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	padding-top: 4%;
+	margin: auto;
+	padding-left: 1%;
+}
+
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	color: #ff7400;
+	padding-top: 3%;
+}
+
+/* DISCOGRAFIA */
+.justificar {
+	display: flex;
+	justify-content: space-around;
+}
+
+.relleno article.discos {
+	width: 24%;
+	display: inline-block;
+	padding-bottom: 8%;
+}
+
+.relleno article.discos .tapa_disco:hover {
+	background: #ff7400;
+}
+
+.relleno article.discos h2 {
+	text-align: center;
+	font-size: 20px;
+}
+
+/* CADA DISCO */
+article.imagen_disco .tapa_disco {
+	display: inline;
+	width: 50%;
+	padding: 2%;
+}
+
+.h2block {
+	display: block;
+}
+
+.imagen_disco {
+	padding-bottom: 5%;
+	display: flex;
+	justify-content: space-between;
+}
+
+article.imagen_disco ul {
+	display: inline-block;
+	vertical-align: top;
+	list-style: none;
+	padding-top: 2%;
+	width: 45%;
+	padding-right: 4%;
+}
+
+article.imagen_disco ul li p {
+	width: 100%;
+	padding-top: 18px;
+	padding-left: 4%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+article.imagen_disco ul li {
+	border-bottom: 1px solid lightgrey;
+
+}
+
+/* BOTON DE SUBIR */
+.fijo a {
+	display: inline-block;
+	background: #ff7400;
+	color: white;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+}
+
+.fijo a:hover {
+	background: #703300; 
+}
+
+footer {
+	background-color: #ff7400;
+	width: 80%;
+	margin: auto;
+}
+
+footer ul {
+	text-align: center;
+	padding: 5px 0;
+}
+
+footer ul li {
+	display: inline-block;
+}
+
+footer ul li a {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: black;
+	margin: 0 10px
+}
+
+footer ul li a:hover {
+	color: rgb(90, 90, 90);
+}
+
+/* CONTACTO */
+section.relleno input {
+	font-size: 15px;
+	padding: 1%; 
+	width: 100%;
+}
+
+section.relleno .separar {
+	margin: 2% 0;
+}
+
+section.relleno label {
+	font-family: 'Open Sans', sans-serif;
+	display: block;
+	margin-bottom: 1%;  
+}
+
+section.relleno .reset {
+	width: 20%;
+	height: 8%;
+	background-color: #ff7400;
+	margin-top: 2%;
+}
+
+section.relleno .send {
+	width: 25%;
+	height: 8%;
+	background-color: #ff7400;
+	margin-top: 2%;
+	margin-left: 2%;
+}
+
+section.relleno img.imagenContacto {
+	display: inline-block;
+	vertical-align: top;
+	width: 350px;
+}
+
+section.contacto {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 2%;
+	padding-bottom: 5%;
+}
+
+textarea {
+	resize: none;
+	width: 100%;
+}
+
+/* SOBRE MI */
+.sobremi {
+	padding-bottom: 5%;
+}
+
+.img {
+	display: block;
+	width: 80%;
+	margin: auto;
+}
+
+.firma {
+	display: block;
+	margin: auto;
+	width: 80%;
+	font-family: 'Roboto', sans-serif;
+	font-size: 10px;
+	text-align: center;
+	color: #707070;
+	padding: 10px 0;
+	background: black;
+	font-weight: 2px;
+}
+
+@media screen and (max-width: 768px) {
+	header nav ul li a, img {
+		width: 100%
+	}
+
+	header nav {
+		width: 100%;
+		display: block;
+	}
+
+	header nav ul.menu li {
+		display: block;
+		text-align: center;
+		padding: 3% 0;
+	}
+
+	header nav ul.menu li a {
+		font-family: 'Roboto', sans-serif;
+		font-size: 18px;
+		text-decoration: none;
+	}
+
+	header nav ul.menu li a:hover {
+		color: rgb(90, 90, 90);
+	}
+
+	header nav ul.menu li:hover .submenu {
+		display: none;
+		background: #ff7400;
+	}
+
+	.relleno {
+		background-color: rgb(255, 255, 255);
+		width: 100%;
+		padding: 2% 2%;
+		margin: auto;
+	} 
+
+	a {
+		text-decoration: none;
+	}
+
+
+	/* NEWS */
+	section.relleno article img, iframe {
+		display: block;
+		width: 100%;
+		margin: auto;
+		padding: 2%;
+	}
+
+	.video {
+		height: 40vh;
+	}
+
+	section.relleno article p {
+		font-size: 15px;
+		line-height: 150%;
+		width: 95%;
+		margin: auto;
+		padding-bottom: 2%;
+	}
+
+	.news {
+		padding-bottom: 5%;
+	}
+
+	/* SHOWS */	
+	section .alinear {
+		display: block;
+	}
+
+	section .alinear .noPad {
+		font-size: 100%;
+		text-align: center;
+		padding-bottom: 3%;
+	}
+
+	section .alinear .botonComprar {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 15px;
+		padding: 10px 15px;
+		display: block;
+		text-align: center;
+		width: 35%;
+		margin: auto;
+	}
+
+	section .alinear .botonComprar:hover {
+		background: #703300;
+	}
+
+	.shows {
+		padding-bottom: 5%;
+	}
+
+
+	h1 {
+		background-color: rgb(255, 255, 255);
+		width: 100%;
+		padding-top: 4%;
+		margin: auto;
+		padding-left: 1%;
+	}
+
+	h2 {
+		padding-top: 3%;
+	}
+
+	/* DISCOGRAFIA */
+	.justificar {
+		display: block;
+	}
+
+	.relleno article.discos {
+		width: 100%;
+		display: block;
+		padding-bottom: 8%;
+	}
+
+	.relleno article.discos .tapa_disco:hover {
+		background: #ff7400;
+	}
+
+	.relleno article.discos h2 {
+		text-align: center;
+		font-size: 20px;
+	}
+
+	/* CADA DISCO */
+	article.imagen_disco .tapa_disco {
+		display: block;
+		width: 100%;
+		padding: 2%;
+	}
+
+	.h2block {
+		display: block;
+	}
+
+	.imagen_disco {
+		display: block;
+	}
+
+	article.imagen_disco ul {
+		display: block;
+		list-style: none;
+		width: 100%;
+	}
+
+	article.imagen_disco ul li p {
+		width: 100%;
+		padding-top: 18px;
+		display: block;
+		text-align: center;
+	}
+
+	article.imagen_disco ul li {
+		border-bottom: 1px solid lightgrey;
+	}
+
+	/* BOTON DE SUBIR */
+	.fijo a {
+		display: none;
+	}
+
+	footer {
+		background-color: #ff7400;
+		width: 100%;
+	}
+
+	footer ul li {
+		display: block;
+		padding: 3% 0;
+	}
+
+	.icon {
+		display: inline-block;
+		padding: 10px 5px;
+	}
+
+	footer ul li a:hover {
+		color: rgb(90, 90, 90);
+	}
+
+	/* CONTACTO */
+	section.relleno input {
+		font-size: 15px;
+		padding: 1%; 
+		width: 100%;
+	}
+
+	section.relleno .separar {
+		margin: 2% 0;
+	}
+
+	section.relleno label {
+		font-family: 'Open Sans', sans-serif;
+		display: block;
+		margin-bottom: 1%;  
+	}
+
+	section.relleno .reset {
+		width: 20%;
+		height: 8%;
+		margin-top: 2%;
+	}
+
+	section.relleno .send {
+		width: 25%;
+		height: 8%;
+		margin-top: 2%;
+		margin-left: 2%;
+	}
+
+	section.relleno img.imagenContacto {
+		display: none
+	}
+
+	section.contacto {
+		padding: 0 2%;
+		padding-bottom: 5%;
+	}
+
+	textarea {
+		resize: none;
+		width: 100%;
+	}
+
+	/* SOBRE MI */
+	.sobremi {
+		padding-bottom: 5%;
+	}
+
+	.img {
+		display: block;
+		width: 100%;
+	}
+
+	.firma {
+		display: block;
+		margin: auto;
+		width: 80%;
+		font-size: 10px;
+		text-align: center;
+		padding: 10px 0;
+		background: black;
+		font-weight: 2px;
+	}
+
+}
